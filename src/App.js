@@ -1,7 +1,9 @@
 import Container from './components/Container';
-import FriendsListItem from './components/FriendsListItem';
 import FriendsList from './components/FriendsList';
+import FriendsListItem from './components/FriendsListItem';
+import TransactionHistory from './components/Transactions';
 import friends from './friends.json';
+import transactions from './transactions.json';
 
 export default function App() {
   return (
@@ -16,6 +18,7 @@ export default function App() {
           />
         ))}
       </FriendsList>
+      <TransactionHistory items={transactions} />
     </Container>
   );
 }
