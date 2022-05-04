@@ -23,7 +23,8 @@
 .transactionHistory tr:hover {
   cursor: pointer;
 
-  background-color: #ddd;
+  color: aquamarine;
+  background-color: rgb(170, 169, 169);
 }
 
 .transactionHistory th {

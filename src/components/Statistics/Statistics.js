@@ -8,9 +8,16 @@ function Statistics({ title = 'Upload stats', stats }) {
 
       <ul className={s.statList}>
         {stats.map(stat => (
-          <li className={s.item}>
+          <li
+            key={stat.id}
+            className={s.item}
+            style={{
+              backgroundColor: bgColor(),
+              color: bgColor(),
+            }}
+          >
             <span className={s.label}>{stat.label}</span>
-            <span className={s.percentage}>{stat.percentage}</span>
+            <span className={s.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
@@ -28,5 +35,9 @@ Statistics.prototype = {
     }),
   ),
 };
+
+function bgColor() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
 
 export default Statistics;
