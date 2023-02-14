@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 
-function Statistics({ title = 'Upload stats', stats }) {
+export const Statistics = ({ title = 'Upload stats', stats }) => {
   return (
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
@@ -23,7 +23,7 @@ function Statistics({ title = 'Upload stats', stats }) {
       </ul>
     </section>
   );
-}
+};
 
 Statistics.prototype = {
   title: PropTypes.string,
@@ -39,5 +39,3 @@ Statistics.prototype = {
 function bgColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
-
-export default Statistics;

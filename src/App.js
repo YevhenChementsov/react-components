@@ -1,13 +1,12 @@
-import Container from './components/Container';
-import Profile from './components/Profile';
-import Statistics from './components/Statistics';
-import FriendsList from './components/FriendsList';
-import FriendsListItem from './components/FriendsListItem';
-import TransactionHistory from './components/Transactions';
-import user from './docs/social-profile/user.json';
-import statisticalData from './docs/statistics/statistical-data.json';
-import friends from './docs/friend-list/friends.json';
-import transactions from './docs/transaction-history/transactions.json';
+import { Container } from 'components/Container/Container';
+import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
+import { FriendsList } from 'components/FriendsList/FriendsList';
+import { TransactionHistory } from 'components/Transactions/TransactionHistory';
+import user from 'docs/social-profile/user.json';
+import statisticalData from 'docs/statistics/statistical-data.json';
+import friends from 'docs/friend-list/friends.json';
+import transactions from 'docs/transaction-history/transactions.json';
 
 export default function App() {
   return (
@@ -20,16 +19,7 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics stats={statisticalData} />
-      <FriendsList>
-        {friends.map(friend => (
-          <FriendsListItem
-            key={friend.id}
-            avatar={friend.avatar}
-            name={friend.name}
-            isOnline={friend.isOnline}
-          />
-        ))}
-      </FriendsList>
+      <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
     </Container>
   );
