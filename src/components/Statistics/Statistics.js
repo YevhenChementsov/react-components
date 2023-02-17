@@ -1,27 +1,27 @@
 import PropTypes from 'prop-types';
-import s from './Statistics.module.css';
+import {
+  StatisticalSection,
+  MainTitle,
+  StatList,
+  Cell,
+  Label,
+  Percentage,
+} from './Statistics.styled';
 
 export const Statistics = ({ title = 'Upload stats', stats }) => {
   return (
-    <section className={s.statistics}>
-      {title && <h2 className={s.title}>{title}</h2>}
+    <StatisticalSection>
+      {title && <MainTitle>{title}</MainTitle>}
 
-      <ul className={s.statList}>
+      <StatList>
         {stats.map(stat => (
-          <li
-            key={stat.id}
-            className={s.item}
-            style={{
-              backgroundColor: bgColor(),
-              color: bgColor(),
-            }}
-          >
-            <span className={s.label}>{stat.label}</span>
-            <span className={s.percentage}>{stat.percentage}%</span>
-          </li>
+          <Cell key={stat.id}>
+            <Label>{stat.label}</Label>
+            <Percentage>{stat.percentage}%</Percentage>
+          </Cell>
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </StatisticalSection>
   );
 };
 
@@ -35,7 +35,3 @@ Statistics.prototype = {
     }),
   ),
 };
-
-function bgColor() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}

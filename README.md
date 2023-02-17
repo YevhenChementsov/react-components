@@ -20,7 +20,7 @@
 
 ## Задания
 
-- [Задание 1 - Профиль социальной сети](./src/docs/social-profile/README.md)
-- [Задание 2 - Секция статистики](./src/docs/statistics/README.md)
-- [Задание 3 - Список друзей](./src/docs/friend-list/README.md)
-- [Задание 4 - История транзакций](./src/docs/transaction-history/README.md)
+- [Задание 1 - Профиль социальной сети](./src/assets/social-profile/README.md)
+- [Задание 2 - Секция статистики](./src/assets/statistics/README.md)
+- [Задание 3 - Список друзей](./src/assets/friend-list/README.md)
+- [Задание 4 - История транзакций](./src/assets/transaction-history/README.md)

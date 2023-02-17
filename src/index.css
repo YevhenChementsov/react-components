@@ -12,12 +12,21 @@ code {
     monospace;
 }
 
+h1,
+h2,
+h3,
 ul,
 p {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.item {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
   list-style: none;
 }
