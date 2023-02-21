@@ -15,7 +15,7 @@ export const ProfileDescription = styled.div`
 `;
 
 export const Avatar = styled.img`
-  margin-top: 15px;
+  margin: 15px auto;
   border-radius: 50%;
   background-color: bisque;
 `;
