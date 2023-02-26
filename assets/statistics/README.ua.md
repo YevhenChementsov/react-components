@@ -5,7 +5,8 @@
 Створити компонент `<Statistics>`, який би відображав статистику по переданим
 пропах. Наприклад завантаження в хмару по типу файлів, відвідування веб-сторінки
 користувачами різних країн, фінансові витрати і т. п. Дані про статистику лежать
-у файлі [statistical-data.json](./statistical-data.json).
+у файлі
+[statistical-data.json](../../src/components/data/statistical-data.json).
 
 ![profile preview](./preview.jpg)
 

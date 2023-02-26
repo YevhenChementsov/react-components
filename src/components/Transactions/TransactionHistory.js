@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import {
   Table,
-  TableHeading,
   TableData,
+  TableHeading,
   TableRow,
 } from './TransactionHistory.styled';
 

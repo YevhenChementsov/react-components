@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import {
-  SocialProfile,
-  ProfileDescription,
   Avatar,
-  Name,
-  Tag,
-  Location,
-  ProfileStatsList,
   Label,
+  Location,
+  Name,
+  ProfileDescription,
+  ProfileStatsList,
   Quantity,
+  SocialProfile,
+  Tag,
 } from './Profile.styled';
 
 export const Profile = ({ name, tag, location, avatar, stats }) => {

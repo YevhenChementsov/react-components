@@ -1,3 +1,5 @@
+**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
+
 # Компоненты и коллекции. Стилизация.
 
 - Создан репозиторий `react-components`.
@@ -20,7 +22,7 @@
 
 ## Задания
 
-- [Задание 1 - Профиль социальной сети](./src/assets/social-profile/README.md)
-- [Задание 2 - Секция статистики](./src/assets/statistics/README.md)
-- [Задание 3 - Список друзей](./src/assets/friend-list/README.md)
-- [Задание 4 - История транзакций](./src/assets/transaction-history/README.md)
+- [Задание 1 - Профиль социальной сети](assets/social-profile/README.md)
+- [Задание 2 - Секция статистики](assets/statistics/README.md)
+- [Задание 3 - Список друзей](assets/friend-list/README.md)
+- [Задание 4 - История транзакций](assets/transaction-history/README.md)

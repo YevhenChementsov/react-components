@@ -1,12 +1,12 @@
 import { Container } from 'components/App/App.styled';
+import friends from 'components/data/friends.json';
+import statisticalData from 'components/data/statistical-data.json';
+import transactions from 'components/data/transactions.json';
+import user from 'components/data/user.json';
+import { FriendsList } from 'components/FriendsList/FriendsList';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
-import { FriendsList } from 'components/FriendsList/FriendsList';
 import { TransactionHistory } from 'components/Transactions/TransactionHistory';
-import user from 'assets/social-profile/user.json';
-import statisticalData from 'assets/statistics/statistical-data.json';
-import friends from 'assets/friend-list/friends.json';
-import transactions from 'assets/transaction-history/transactions.json';
 
 export default function App() {
   return (

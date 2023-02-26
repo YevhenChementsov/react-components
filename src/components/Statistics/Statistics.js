@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import {
-  StatisticalSection,
-  MainTitle,
-  StatList,
   Cell,
   Label,
+  MainTitle,
   Percentage,
+  StatisticalSection,
+  StatList,
 } from './Statistics.styled';
 
 export const Statistics = ({ title = 'Upload stats', stats }) => {

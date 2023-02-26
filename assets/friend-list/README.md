@@ -4,7 +4,7 @@
 
 Необходимо создать компонент `<FriendList>`, с помощью которого мы могли бы
 отображать информацию о друзьях пользователя. Информация о друзьях хранится в
-файле [friends.json](./friends.json).
+файле [friends.json](../../src/components/data/friends.json).
 
 ![Превью компонента FriendList](./preview.jpg)
 
