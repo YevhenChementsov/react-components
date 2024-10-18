@@ -1,4 +1,6 @@
 import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
+import statisticalData from 'data/statistical-data.json';
 import user from 'data/user.json';
 import { Container } from './App.styled';
 
@@ -14,6 +16,7 @@ export function App() {
         avatar={avatar}
         stats={stats}
       />
+      <Statistics stats={statisticalData} />
     </Container>
   );
 }
