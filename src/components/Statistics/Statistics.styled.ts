@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
-import { CellProps } from './Statistics.types';
+type CellProps = {
+  backgroundColor?: string;
+};
 
 export const StatisticalSection = styled.section`
   display: flex;

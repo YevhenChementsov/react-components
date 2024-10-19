@@ -1,8 +1,18 @@
 import { List } from './FriendsList.styled';
-import { FriendsListProps } from './FriendsList.types';
 import { FriendsListItem } from './FriendsListItem/FriendsListItem';
 
-export const FriendsList = ({ friends }: FriendsListProps) => {
+type FriendsListProps = {
+  friends: Friend[];
+};
+
+export interface Friend {
+  id: number;
+  avatar: string;
+  name: string;
+  isOnline: boolean;
+}
+
+export function FriendsList({ friends }: FriendsListProps) {
   return (
     <List>
       {friends.map(({ id, avatar, name, isOnline }) => (
@@ -15,4 +25,4 @@ export const FriendsList = ({ friends }: FriendsListProps) => {
       ))}
     </List>
   );
-};
+}

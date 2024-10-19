@@ -6,24 +6,31 @@ import {
   StatisticalSection,
   StatList,
 } from './Statistics.styled';
-import { StatisticsProps } from './Statistics.types';
 
-export const Statistics = ({
-  title = 'Upload stats',
-  stats,
-}: StatisticsProps) => {
+type StatisticsProps = {
+  title?: string;
+  stats: Stat[];
+};
+
+interface Stat {
+  id: string;
+  label: string;
+  percentage: number;
+}
+
+export function Statistics({ title = 'Upload stats', stats }: StatisticsProps) {
   return (
     <StatisticalSection>
       {title && <MainTitle>{title}</MainTitle>}
 
       <StatList>
-        {stats.map(stat => (
-          <Cell key={stat.id}>
-            <Label>{stat.label}</Label>
-            <Percentage>{stat.percentage}%</Percentage>
+        {stats.map(({ id, label, percentage }) => (
+          <Cell key={id}>
+            <Label>{label}</Label>
+            <Percentage>{percentage}%</Percentage>
           </Cell>
         ))}
       </StatList>
     </StatisticalSection>
   );
-};
+}

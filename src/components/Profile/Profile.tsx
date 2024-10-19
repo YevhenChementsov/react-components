@@ -9,9 +9,26 @@ import {
   SocialProfile,
   Tag,
 } from './Profile.styled';
-import { ProfileProps } from './Profile.types';
 
-export function Profile({ name, tag, location, avatar, stats }: ProfileProps) {
+interface ProfileProps {
+  name: string;
+  tag: string;
+  location: string;
+  avatar: string;
+  stats: {
+    followers: number;
+    views: number;
+    likes: number;
+  };
+}
+
+export function Profile({
+  name,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}: ProfileProps) {
   return (
     <SocialProfile>
       <ProfileDescription>
@@ -24,15 +41,15 @@ export function Profile({ name, tag, location, avatar, stats }: ProfileProps) {
       <ProfileStatsList>
         <li>
           <Label>Followers</Label>
-          <Quantity>{stats.followers}</Quantity>
+          <Quantity>{followers}</Quantity>
         </li>
         <li>
           <Label>Views</Label>
-          <Quantity>{stats.views}</Quantity>
+          <Quantity>{views}</Quantity>
         </li>
         <li>
           <Label>Likes</Label>
-          <Quantity>{stats.likes}</Quantity>
+          <Quantity>{likes}</Quantity>
         </li>
       </ProfileStatsList>
     </SocialProfile>

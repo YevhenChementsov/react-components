@@ -1,5 +1,8 @@
 import styled from '@emotion/styled';
-import { StatusProps } from './FriendsListItem.types';
+
+type StatusProps = {
+  onlineStatus?: boolean;
+};
 
 export const FriendCard = styled.li`
   display: flex;
